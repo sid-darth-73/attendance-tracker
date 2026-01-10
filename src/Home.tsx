@@ -1,8 +1,6 @@
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
-import dotenv from 'dotenv'
-dotenv.config()
 
 type DayKey = "Monday" | "Tuesday" | "Wednesday" | "Thursday" | "Friday";
 
@@ -14,7 +12,7 @@ interface RoutineClass {
   label: string;
 }
 
-const API_BASE = process.env.VITE_API_BASE || "http://localhost:3002";
+const API_BASE = "http://localhost:3002";
 
 const ROUTINE: Record<DayKey, RoutineClass[]> = {
   Monday: [
