@@ -1,0 +1,408 @@
+.app-container {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 0;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-shadow: none;
+  color: #000000;
+}
+
+.app-header {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.app-header h1 {
+  font-size: 2rem;
+  margin: 0 0 0.5rem;
+}
+
+.subtitle {
+  margin: 0;
+  color: #666666;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.secret-section {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #000000;
+}
+
+.secret-section .form-group {
+  max-width: 400px;
+}
+
+.day-selector {
+  display: flex;
+  gap: 0.6rem;
+  margin: 1.5rem 0 1.75rem;
+  flex-wrap: wrap;
+}
+
+.day-button {
+  border-radius: 0;
+  border: 1px solid #000000;
+  background: #ffffff;
+  color: #000000;
+  padding: 0.45rem 1.1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  font-weight: 400;
+}
+
+.day-button:hover {
+  background: #f5f5f5;
+}
+
+.day-button.active {
+  background: #000000;
+  border-color: #000000;
+  color: #ffffff;
+}
+
+.routine-section h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.no-classes {
+  color: #666666;
+}
+
+.routine-table {
+  margin-top: 0.75rem;
+  border-radius: 0;
+  border: 1px solid #000000;
+  overflow: hidden;
+}
+
+.routine-header,
+.routine-row {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  gap: 0.75rem;
+}
+
+.routine-header {
+  background: #000000;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.routine-row:nth-child(odd) {
+  background: #ffffff;
+}
+
+.routine-row:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.class-info {
+  display: flex;
+  align-items: center;
+}
+
+.class-label {
+  font-weight: 500;
+}
+
+.status-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  justify-content: flex-start;
+}
+
+.status-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+}
+
+.status-option input[type="radio"] {
+  accent-color: #000000;
+}
+
+.actions {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submit-button {
+  border-radius: 0;
+  border: 1px solid #000000;
+  padding: 0.7rem 1.6rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.submit-button:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.submit-button:disabled {
+  opacity: 0.5;
+  cursor: default;
+  background: #cccccc;
+  color: #666666;
+  border-color: #cccccc;
+}
+
+.message {
+  margin-top: 1.25rem;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+}
+
+.message.success {
+  background: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+}
+
+.message.error {
+  background: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+}
+
+.extra-class-section {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid #000000;
+}
+
+.extra-class-section h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.extra-class-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #000000;
+}
+
+.form-select,
+.form-input {
+  padding: 0.6rem 0.9rem;
+  border-radius: 0;
+  border: 1px solid #000000;
+  background: #ffffff;
+  color: #000000;
+  font-size: 0.95rem;
+  transition: background 0.2s ease;
+}
+
+.form-select:hover,
+.form-input:hover {
+  background: #f5f5f5;
+}
+
+.form-select:focus,
+.form-input:focus {
+  outline: none;
+  border-color: #000000;
+  background: #ffffff;
+}
+
+.form-select option {
+  background: #ffffff;
+  color: #000000;
+}
+
+.extra-class-button {
+  border-radius: 0;
+  border: 1px solid #000000;
+  padding: 0.7rem 1.6rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+  align-self: flex-start;
+  margin-top: 0.5rem;
+}
+
+.extra-class-button:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.extra-class-button:disabled {
+  opacity: 0.5;
+  cursor: default;
+  background: #cccccc;
+  color: #666666;
+  border-color: #cccccc;
+}
+
+@media (max-width: 640px) {
+  .app-container {
+    margin: 1rem;
+    padding: 1.4rem;
+  }
+
+  .routine-header,
+  .routine-row {
+    grid-template-columns: 1.6fr 2.4fr;
+  }
+
+  .status-controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .extra-class-form {
+    gap: 0.9rem;
+  }
+
+  .extra-class-button {
+    align-self: stretch;
+  }
+}
+
+/* Status Page Styles */
+.status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.status-header h1 {
+  margin: 0;
+}
+
+.nav-link {
+  color: #000000;
+  text-decoration: none;
+  font-size: 0.95rem;
+  border: 1px solid #000000;
+  padding: 0.5rem 1rem;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav-link:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.loading-text {
+  color: #666666;
+  text-align: center;
+  padding: 2rem;
+}
+
+.retry-button {
+  margin-top: 1rem;
+  border: 1px solid #000000;
+  background: #ffffff;
+  color: #000000;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.retry-button:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.status-table {
+  margin-top: 1rem;
+  border: 1px solid #000000;
+  overflow: hidden;
+}
+
+.status-table-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  background: #000000;
+  color: #ffffff;
+  padding: 0.75rem 1rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  gap: 0.75rem;
+}
+
+.status-table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid #000000;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.status-table-row:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.status-table-row.low-attendance {
+  background: #ffebee;
+}
+
+.course-name {
+  font-weight: 500;
+}
+
+.percentage {
+  font-weight: 600;
+}
+
+.percentage.low-percentage {
+  color: #d32f2f;
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .status-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .status-table-header,
+  .status-table-row {
+    grid-template-columns: 1.5fr 0.8fr 0.8fr 1fr;
+    font-size: 0.85rem;
+    padding: 0.6rem 0.8rem;
+  }
+}
