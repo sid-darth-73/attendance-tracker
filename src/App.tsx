@@ -5,7 +5,7 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter basename="/attendance-tracker">
+    <BrowserRouter basename="/attendance-tracker/">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/status" element={<Status />} />
