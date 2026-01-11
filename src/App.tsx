@@ -1,16 +1,16 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import Home from "./Home";
 import Status from "./Status";
 import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter basename="/attendance-tracker/">
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/status" element={<Status />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
