@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
 
-const API_BASE = "http://localhost:3002";
+const API_BASE = "https://attendance-api-vk9k.onrender.com";
 
 interface AttendanceData {
   courseName: string;

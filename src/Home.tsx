@@ -12,7 +12,7 @@ interface RoutineClass {
   label: string;
 }
 
-const API_BASE = "http://localhost:3002";
+const API_BASE = "https://attendance-api-vk9k.onrender.com";
 
 const ROUTINE: Record<DayKey, RoutineClass[]> = {
   Monday: [
