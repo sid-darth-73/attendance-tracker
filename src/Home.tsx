@@ -18,6 +18,7 @@ const ROUTINE: Record<DayKey, RoutineClass[]> = {
   Monday: [
     { id: "mon-coi", courseName: "CoI", label: "CoI" },
     { id: "mon-es-lab", courseName: "ES_lab", label: "ES_lab" },
+    { id: "mon-aiml", courseName: "AIML", label: "AIML"},
     { id: "mon-cd", courseName: "CD", label: "CD" },
     { id: "mon-bct", courseName: "BCT", label: "BCT" },
   ],
@@ -28,6 +29,7 @@ const ROUTINE: Record<DayKey, RoutineClass[]> = {
     { id: "wed-cd-lab", courseName: "CD_lab", label: "CD_lab" },
     { id: "wed-aiml", courseName: "AIML", label: "AIML" },
     { id: "wed-cd", courseName: "CD", label: "CD" },
+    { id: "wed-bct", courseName: "BCT", label: "BCT"},
   ],
   Thursday: [
     { id: "thu-aiml", courseName: "AIML", label: "AIML" },
